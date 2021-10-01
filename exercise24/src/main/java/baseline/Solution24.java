@@ -25,12 +25,9 @@ public class Solution24 {
                 char[] a2 = input2.toCharArray();
                 Arrays.sort(a1);
                 Arrays.sort(a2);
-                if (Arrays.equals(a1,a2))
-                        return true;
-                else
-                        return false;
+                return Arrays.equals(a1, a2);
         }
-        public static void takeInput()
+        private static void takeInput()
         {
                 //Takes user input and sets to string variables input1, input 2
                 System.out.println("Enter two strings and I'll tell you if they are anagrams:");
@@ -39,7 +36,7 @@ public class Solution24 {
                 System.out.print("Enter the second string: ");
                 input2 = scan.nextLine();
         }
-        public static void printResult(boolean res)
+        private static void printResult(boolean res)
         {
                 //Prints the result to the user
                 if(res)
@@ -50,9 +47,9 @@ public class Solution24 {
 
         public static void main(String[] args) {
                 //Call functions in proper order
-                boolean result = false;
+
                 takeInput();
-                result = isAnagram(input1, input2);
+                boolean result = isAnagram(input1, input2);
                 printResult(result);
 
 
