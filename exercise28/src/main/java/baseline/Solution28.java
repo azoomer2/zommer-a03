@@ -1,19 +1,30 @@
 package baseline;
 
+import java.util.Scanner;
+
 public class Solution28 {
 
+    private static final Scanner scan = new Scanner(System.in);
 
-    public static int adder()
+    public static int takeInput()
     {
-        //for loop to add 5 numbers
-
-        return sum;
+        System.out.print("Enter a number: ");
+        String inputString = scan.nextLine();
+        return (Integer.parseInt(inputString));
     }
-
 
     public static void main(String[] args) {
 
-        //print sum;
-        int sum = adder();
+
+        int sum = 0;
+        //loop to take input and then add to sum
+        for(int i=0; i<5; i++)
+        {
+            int userInput = takeInput();
+            sum = sum + userInput;
+        }
+
+
+        System.out.println("The total is " + sum + ".");
     }
 }
