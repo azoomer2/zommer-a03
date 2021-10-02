@@ -1,36 +1,55 @@
 package baseline;
 
+import java.util.Scanner;
+
 public class Solution29 {
 
-    private static int rateOfReturn = 0;
+    private static final Scanner scan = new Scanner(System.in);
+    private static int check = 0;
 
-    private static boolean inputValidation(String input){
+    public static boolean inputValidation(String input) {
 
+        try {
+
+
+        check = Integer.parseInt(input);
         //return true if failed validation
-        //return true if passed validation
+        }catch (Exception numFail){
+            return true;
+        }
 
+        if(check == 0)
+            return true;
+        //return false if passed validation
         return false;
     }
 
     public static int doubleInvestment(int r)
     {
-        //years = 72/r
-
-        return years;
+        return (72/r);
     }
 
     public static void main(String[] args) {
 
-        boolean error = false;
+        String input;
 
-        //take input
+        boolean error = true;
 
-        //validate input
-        error = inputValidation();
-        //if failed, print message
+        while(error) {
+            //take input
+            System.out.print("What is the rate of return? ");
+            input = scan.nextLine();
+
+            //validate input
+            error = inputValidation(input);
+            //if failed, print message
+            if (error)
+                System.out.print("Sorry that's not a valid input.\n");
+        }
         //else
-        doubleInvestment(input);
+            int years = doubleInvestment(check);
 
+        System.out.print("It will take " + years + " years to double your initial investment.");
 
     }
 }
