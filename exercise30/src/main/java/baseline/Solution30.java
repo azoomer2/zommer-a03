@@ -8,10 +8,17 @@ public class Solution30 {
     public static void tableGenerator()
     {
         //for loop 1-12
+        for(int i=1; i<=12; i++){
             //insert new line to skip down a row
-            //for loop 1-12
-                //print i*j
+            if(i>1)
+                System.out.println("\n");
 
+            //for loop 1-12
+            for(int j=1; j<=12; j++){
+                //print i*j
+                System.out.printf("%4d",(i*j));
+            }
+        }
     }
 
 
@@ -19,6 +26,7 @@ public class Solution30 {
 
     public static void main(String[] args) {
         //call tableGenerator()
+        tableGenerator();
     }
 
 }
