@@ -1,19 +1,40 @@
 package baseline;
 
+import java.util.Scanner;
+
 public class Solution26 {
+    private static final Scanner scan = new Scanner(System.in);
+    static double b = 0.0;
+    static double i = 0.0;
+    static double p = 0.0;
 
     public static double aprPercentToDailyRate(double percent)
     {
-
-        return 0.0;
+        return((percent/100)/365);
     }
 
     public static void main(String[] args) {
         //Take input for number of months
+        System.out.print("What is your balance?");
+        String bInput = scan.nextLine();
+        b = Double.parseDouble(bInput);
+
         //Take input for APR as percent
-        double dailyRate = aprPercentToDailyRate(APRinput);
+        System.out.print("What is the APR on the card (as a percent)?");
+        String aprInput = scan.nextLine();
+        double aprPercent = Double.parseDouble(aprInput);
+
+        i = aprPercentToDailyRate(aprPercent);
+
         //Take input for balance
+        System.out.print("What is the monthly payment you can make?");
+        String pInput = scan.nextLine();
+        p = Double.parseDouble(pInput);
+
+        double n = PaymentCalculator.calculateMonthsUntilPaidOff();
+
         //Print out monthly payment
+        System.out.println("It will take you "+n+" months to pay off this card.");
     }
 
 
