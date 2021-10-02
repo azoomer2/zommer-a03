@@ -1,12 +1,11 @@
 
 t
-java:S1450"YRemove the "employeeID" field and declare it as a local variable in the relevant methods.(îºğåÿÿÿÿÿ
+java:S1450"YRemove the "employeeID" field and declare it as a local variable in the relevant methods.(îºğåÿÿÿÿÿ
 n
-java:S1450
-"XRemove the "firstName" field and declare it as a local variable in the relevant methods.(Ã‰¿Ì
+java:S1450"XRemove the "firstName" field and declare it as a local variable in the relevant methods.(Ã‰¿Ì
 m
-java:S1450"WRemove the "lastName" field and declare it as a local variable in the relevant methods.(Ïö—‚
+java:S1450"WRemove the "lastName" field and declare it as a local variable in the relevant methods.(Ïö—‚
 l
-java:S1450"VRemove the "zipCode" field and declare it as a local variable in the relevant methods.(¥†â
+java:S1450"VRemove the "zipCode" field and declare it as a local variable in the relevant methods.(¥†â
 A
-java:S1068"+Remove this unused "zipCode" private field.(¥†â
+java:S1068"+Remove this unused "zipCode" private field.(¥†â
