@@ -1,0 +1,9 @@
+
+D
+java:S2140")Use "java.util.Random.nextInt()" instead.(â‰í¹ıÿÿÿÿ
+^
+java:S1854("<Remove this useless assignment to local variable "question".(–Ë—¸øÿÿÿÿ8µö÷¹Ä/
+O
+java:S1481("-Remove this unused "question" local variable.(–Ë—¸øÿÿÿÿ8¶ö÷¹Ä/
+o
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÂÈ³±
