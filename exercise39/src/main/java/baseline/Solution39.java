@@ -4,11 +4,22 @@ package baseline;
  *  Copyright 2021 Alexander Zommer
  */
 
+import java.util.TreeMap;
+
 public class Solution39 {
+
+    private static TreeMap<String,String> map = new TreeMap<>();
 
     private static void defineMaps()
     {
         //setup maps with given data
+
+        map.put("Johnson",   "John Johnson         | Manager               |2016-12-31");
+        map.put("Xiong",     "Tou Xiong            | Software Engineer     |2016-10-05");
+        map.put("Michaelson","Michaela Michaelson  | District Manager      |2016-12-31");
+        map.put("Jacobson",  "Jake Jacobson        | Programmer            |");
+        map.put("Jackson",   "Jacquelyn Jackson    | DBA                   |");
+        map.put("Webber",    "Sally Webber         | Web Developer         |2015-12-18");
     }
 
 
